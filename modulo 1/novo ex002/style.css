@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Gloria+Hallelujah&family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+body{background-image: linear-gradient(to right,#BF9673,#8C4E37 );}
+main{background-color: white;
+width: 600px;
+padding: 10px;
+margin: auto;
+border-radius: 20px;
+box-shadow: 5px 10px 10px 10px rgba(0, 0, 0, 0.521);
+font:normal normal 25px 'Amatic SC', cursive;}
+h1 {color: #8C4E37;
+text-align: center;
+text-shadow: 1px 1px 1px black;}
+h2{color: #8C4E37;
+text-align: left;
+text-shadow: 1px 1px 1px black;}
+p{text-align: justify;}
+a{color: black;
+text-decoration: none;}
+a:hover{text-decoration: underline;
+color: red;}
+a:active{color: yellow;}
+a::after {content: '❀';
+text-decoration: none;
+font-weight: normal;
+color: #8C4E37;}
+.especial::after{content: '✿';}
+
+
+
+
+
+
