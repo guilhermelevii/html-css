@@ -15,10 +15,16 @@
       tbody > tr:nth-child(2n) {
         background-color: lightgray;
       }
+      h1:hover{
+        background-color: red;
+        padding: 5px;
+      }
 
       table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
+
       }
       caption {
         font-size: 20px;
@@ -31,6 +37,12 @@
         border-top: 1px solid black;
         border-right: 1px solid black;
         font-family: "Open Sans", sans-serif;
+      }
+      thead > tr > th{
+        position: sticky;
+        top: 0;
+        background-color: red;
+        
       }
 
       td,
@@ -49,8 +61,34 @@
       }
     </style>
   </head>
-  <body>
+  
     <h1>Uso de Tabelas Grandes</h1>
+    <!--Resumindo, "position: relative;" permite que você ajuste a posição de um elemento usando
+       valores de deslocamento, enquanto mantém seu espaço no fluxo normal da página.-->
+
+    <!--"position: sticky;" é uma propriedade CSS que define o posicionamento de um elemento de forma que ele se comporta inicialmente como um elemento
+       com "position: relative;", mas quando a página é rolada, ele muda para se comportar como um elemento com "position: fixed;" em relação a um contêiner pai.-->
+
+       <!--
+
+      📝 NÃO ESQUEÇA:
+
+      1º Passso - Usar posicionamento relativo na tabela:		position: relative;
+
+       Ex:	table {
+           	width: 500px;
+            	border-collapse: collapse;
+            	position: relative;}
+
+
+      2º Passso - Fixar o cabeçalho:		position: sticky;
+
+       Ex:	thead {
+            	position: sticky;
+            	top: -1px;}
+            
+                                    -->
+
     <!--
         ANATOMIA PARA TABELAS GRANDES
         CAPTION - TITULO DA TABELA
@@ -60,17 +98,14 @@
            TBODY
                TR,TD,TH
             TFOOT
-                TR,TD,TH       
-    -->
+                TR,TD,TH -->
+
     <!--HIERARQUIA DE TABELAS (simples)
     1*TABLE = tabela - table
       2* TABLE ROW = linha de tabela - tr
             TABLE HEADER = cabeçalho de tabela - th
             TABLE DATA = dado de tabela - td
-
-
-            *ENTENDER A HIERARQUIA DA SUA TABELA NO HTML* 
-    -->
+            *ENTENDER A HIERARQUIA DA SUA TABELA NO HTML* -->
     <table>
       <caption>
         População das Unidades Federativas
@@ -130,5 +165,19 @@
         </tr>
       </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugit non veniam maxime nam. Praesentium nulla beatae voluptas aperiam cum unde ullam quibusdam facilis amet magni accusantium, vero natus nemo.</p>
   </body>
 </html>
