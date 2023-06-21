@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tabelas</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-
-        }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
       table {
         border-collapse: collapse;
         width: 300px;
-        
       }
       td {
         border: 1px solid black;
@@ -22,12 +20,23 @@
     </style>
   </head>
   <body>
+    <!--'colspan' é um atributo HTML usado em tabelas para definir a quantidade de colunas que uma célula deve ocupar horizontalmente. 
+        Ele permite que uma célula se estenda por várias colunas, combinando as células adjacentes em uma única célula maior.
+        O atributo colspan é usado em uma tag <td> (célula da tabela) e especifica quantas colunas devem ser mescladas em uma única célula. 
+        Ele aceita um valor inteiro positivo que representa o número de colunas. Por exemplo, se você definir colspan="2", a célula se estenderá por duas colunas, 
+        mesclando as células adjacentes da coluna à direita.-->
+
+    <!--rowspan é um atributo HTML usado em tabelas para definir a quantidade de linhas que uma célula deve ocupar verticalmente. 
+        Ele permite que uma célula se estenda por várias linhas, combinando as células adjacentes em uma única célula maior.
+        O atributo rowspan é usado em uma tag <td> (célula da tabela) e especifica quantas linhas devem ser mescladas em uma única célula.
+        Ele aceita um valor inteiro positivo que representa o número de linhas. Por exemplo, se você definir rowspan="2", a célula se estenderá por duas linhas,
+        mesclando as células adjacentes da linha abaixo.-->
+        
     <h1>Mesclagem de Células</h1>
     <table>
       <tr>
         <td>A</td>
         <td colspan="2">B</td>
-        
       </tr>
       <tr>
         <td rowspan="3">D</td>
@@ -35,13 +44,9 @@
         <td rowspan="2">F</td>
       </tr>
       <tr>
-        
         <td>H</td>
-        
       </tr>
       <tr>
-        
-        
         <td colspan="2">M</td>
       </tr>
     </table>
