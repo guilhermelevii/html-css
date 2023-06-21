@@ -5,20 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tabelas</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
       body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        font-weight: bold;
+        font-style: normal;
+      }
+      tbody > tr:nth-child(2n) {
+        background-color: lightgray;
       }
 
       table {
         width: 500px;
         border-collapse: collapse;
       }
+      caption {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: red;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-left: 1px solid black;
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        font-family: "Open Sans", sans-serif;
+      }
 
       td,
       th {
         border: 1px solid black;
         padding: 10px;
-        background-color: rgba(0, 0, 0, 0.164);
       }
 
       thead,
@@ -35,6 +53,7 @@
     <h1>Uso de Tabelas Grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
+        CAPTION - TITULO DA TABELA
         TABLE
            THEADE
                TR,TD, TH
@@ -53,10 +72,13 @@
             *ENTENDER A HIERARQUIA DA SUA TABELA NO HTML* 
     -->
     <table>
+      <caption>
+        População das Unidades Federativas
+      </caption>
       <thead>
         <tr>
-          <th>Estado</th>
-          <th>População</th>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 50px">População</th>
         </tr>
       </thead>
       <tbody>
@@ -103,7 +125,7 @@
       </tbody>
       <tfoot>
         <tr>
-          <th>Total de habitantes</th>
+          <th scope="row">Total de habitantes</th>
           <td class="num"><strong>155.148.250</strong></td>
         </tr>
       </tfoot>
